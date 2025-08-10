@@ -67,6 +67,17 @@ fun main() {
         // Como el nuevo valor también es Employee, podemos acceder a su propiedad 'name'
         println(something.name)  // Imprime el nombre del nuevo Employee asignado
     }
+    println("-".repeat(100))
+    val personaje = "Los pollitos"
+    val cancionInfantil = """$personaje dicen pío, pío, pío
+                        |cuando tienen hambre,
+                        |cuando tienen frío.
+                        |La gallina busca
+                        |el maíz y el trigo,
+                        |les da la comida
+                        |y les presta abrigo.""".trimMargin()
+    println(cancionInfantil)
+
 }
 
 
