@@ -47,8 +47,26 @@ fun main() {
     println("employeeFour !== employeeTwo: ${employeeFour !== employeeTwo}") // false → Misma referencia.
     println("employeeTwo != employeeThree: ${employeeTwo != employeeThree}") // false → equals() dice que son iguales.
     println("employeeTwo !== employeeThree: ${employeeTwo !== employeeThree}") // true → Referencias distintas.
-    
 
+    println("-".repeat(100))
+    // Variable que puede almacenar cualquier tipo de objeto
+    var something: Any = employeeFour  // En este momento contiene un objeto Employee
+
+    // Verificamos si 'something' es realmente un Employee
+    if (something is Employee) {  // Operador 'is' = equivalente a instanceof en Java
+        // Si la condición es verdadera, el compilador aplica "smart cast":
+        // dentro del bloque podemos acceder directamente a las propiedades y métodos de Employee.
+
+        // Ejemplo de cast explícito (no necesario por el smart cast):
+        // val newEmployee = something as Employee
+
+        // Reasignamos 'something' a otro Employee.
+        // ⚠ Si reasignáramos a otro tipo (String, Int, etc.) perderíamos el smart cast
+        something = employeeOne
+
+        // Como el nuevo valor también es Employee, podemos acceder a su propiedad 'name'
+        println(something.name)  // Imprime el nombre del nuevo Employee asignado
+    }
 }
 
 
