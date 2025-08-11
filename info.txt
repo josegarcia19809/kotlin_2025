@@ -13,11 +13,8 @@ Creating Arrays of Nullable Types
 Data Types, Nullability, and Arrays: Kotlin Practice Exercises
 15:58
 
-Higher order functions
-08:51
-Practice: Lambdas and Higher Order Functions: Dividir entre 10
-05:43
-Exercise: Lambdas and Higher Order Functions
+
+Exercise: Lambdas and Higher Order Functions: Mensaje personalizado
 00:15
 Solution: Lambdas and Higher Order Functions
 06:27
