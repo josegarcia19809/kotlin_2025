@@ -15,7 +15,7 @@ Data Types, Nullability, and Arrays: Kotlin Practice Exercises
 
 Higher order functions
 08:51
-Practice: Lambdas and Higher Order Functions
+Practice: Lambdas and Higher Order Functions: Dividir entre 10
 05:43
 Exercise: Lambdas and Higher Order Functions
 00:15
