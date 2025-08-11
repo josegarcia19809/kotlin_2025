@@ -1,0 +1,33 @@
+Kotlin Data Types and Nullability: An Introduction to Section 4 Concepts
+00:46
+Kotlin's Primitive Types: Int, Byte, Short, Long, Float, Double, Char, Boolean
+20:08
+Working with Arrays in Kotlin: Creation, Initialization, and Primitive Types
+23:08
+Preventing NullPointerExceptions: Kotlin's Nullable Types and Safe Calls -Part 1
+21:04
+Advanced Null Safety: The Elvis Operator and Not-Null Assertions in Kotlin-Part
+14:47
+Creating Arrays of Nullable Types
+06:19
+Data Types, Nullability, and Arrays: Kotlin Practice Exercises
+15:58
+
+Higher order functions
+08:51
+Practice: Lambdas and Higher Order Functions
+05:43
+Exercise: Lambdas and Higher Order Functions
+00:15
+Solution: Lambdas and Higher Order Functions
+06:27
+Common Higher Order functions
+11:14
+Practice: Common Higher Order Functions
+08:14
+Exercise: Common Higher Order Functions
+00:07
+Solution: Common Higher Order Functions
+03:17
+Section recap
+02:39
