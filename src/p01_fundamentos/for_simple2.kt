@@ -36,8 +36,8 @@ fun main() {
     println(".".repeat(100))
 
     // Imprimir de forma descendente
-    println("Numeros del 10 al 1")
-    for (x in 10 downTo 1) {
+    println("Numeros del 9 al 1")
+    for (x in 9 downTo 1) {
         print("$x ")
     }
     println()
@@ -46,6 +46,31 @@ fun main() {
     println("Números del 500 al 0 de 100 en 100")
     for (i in 500 downTo 0 step 100) {
         print("$i ")
+    }
+    println()
+    println(".".repeat(100))
+
+    // Este programa imprime los cuadrados de los primeros 10 números
+    val numMinimo = 1
+    val numMaximo = 10
+    println("Número\tCuadrado")
+    for (num in numMinimo..numMaximo) {
+        println("$num\t\t${num * num}")
+    }
+    println()
+    println(".".repeat(100))
+
+    // Mostrar un mensaje 5 veces con repeat
+    println("Mostrar un mensaje 5 veces")
+    repeat(5) {
+        println("Debo hacer mi tarea")
+    }
+    println()
+    println(".".repeat(100))
+
+    println("Números del 20 al 50 que vaya en intervalos de 3 en 3")
+    for (num in 20..50 step 3){
+        print("$num ")
     }
 
 }

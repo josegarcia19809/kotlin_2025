@@ -1,6 +1,6 @@
 package p01_fundamentos
 
-// for_simple
+// for_simple.kt
 
 fun main() {
     // Mostrar los números del 1 al 5
@@ -8,6 +8,7 @@ fun main() {
     for (num in 1..5) {
         print("$num ")
     }
+
     println()
     println(".".repeat(100))
 
@@ -47,7 +48,7 @@ fun main() {
     println()
     println(".".repeat(100))
 
-    // Equivalente con arreglo explícito (implicito)
+    // Equivalente con arreglo explícito
     for (num in arrayOf(0, 1, 2, 3, 4)) {
         print("$num ")
     }
