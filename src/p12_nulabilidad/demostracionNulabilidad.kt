@@ -54,13 +54,54 @@ fun demostrarUsoVariablesNulas() {
     println(enMayusculas)   // imprime: "ESTE TEXTO NO ES NULO"
 }
 
+/*
+🔑 Explicación de lo importante
+
+?.let { ... }
+Se ejecuta solo si la variable no es null. Muy útil para evitar validaciones if (x != null).
+
+Comparación con null (==)
+En Kotlin, comparar una cadena nula con otra cadena devuelve false. No lanza error.
+
+!! (not-null assertion)
+Le decimos al compilador: “Confía en mí, no es null”. Si lo es, explota con NullPointerException.
+👉 Se recomienda evitarlo en la práctica, excepto en casos muy controlados.
+* */
+
 // Función simple que imprime un texto
 fun imprimirTexto(texto: String) {
     println(texto)
+}
+
+fun ejemploArregloNulo() {
+    // 1) Creamos un arreglo de enteros que permite valores nulos
+    val enterosNulos = arrayOfNulls<Int>(5)
+    // Inicialmente: [null, null, null, null, null]
+
+    // 2) Recorremos el arreglo y mostramos cada elemento
+    println("Elementos de un arreglo nulo")
+    for (numero in enterosNulos) {
+        print("$numero ")   // imprime 5 veces "null"
+    }
+    println()
+
+    // 3) Acceso inseguro: esto lanza NullPointerException ⚠️
+    // println(enterosNulos[3].toString())
+
+    // 4) Acceso seguro con ?. → devuelve null como cadena sin error
+    println("Imprime el elemento[3] como cadena: ")
+    println(enterosNulos[3]?.toString())   // imprime: null
+
+    // 5) Si asignamos un valor, ya podemos usar toString() sin riesgo
+    enterosNulos[3] = 42
+    println("Después de asignar un valor a elemento[3]")
+    println(enterosNulos[3].toString())   // imprime: 42
 }
 
 fun main() {
     demostracionNulabilidad()
     println("-".repeat(100))
     demostrarUsoVariablesNulas()
+    println("-".repeat(100))
+    ejemploArregloNulo()
 }
