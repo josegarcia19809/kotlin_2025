@@ -28,3 +28,5 @@ Solution: Common Higher Order Functions
 03:17
 Section recap
 02:39
+
+Archivos: lectura y escritura
