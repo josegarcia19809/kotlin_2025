@@ -1,2 +1,4 @@
 huevo
 pan
+leche
+queso

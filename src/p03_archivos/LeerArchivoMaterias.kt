@@ -1,8 +1,9 @@
 package p03_archivos
 
-import java.io.File
 
-// LeerArchivoMaterias
+// LeerArchivoMaterias.kt
+
+import java.io.File
 
 fun main() {
     val nombreArchivo = "materias.txt"
