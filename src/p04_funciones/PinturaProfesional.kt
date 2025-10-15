@@ -41,5 +41,18 @@ fun main() {
     print("¿Cuántos pies cuadrados tiene cada habitación? ")
     val piesCuadradosPorHabitacion = readln().toDouble()
 
+    val piesCuadradosTotal = piesCuadradosPorHabitacion * habitaciones
 
+    val galoresRequeridos = calcularGalonesRequeridos(piesCuadradosTotal)
+    val horasTrabajo = calcularHorasTrabajo(piesCuadradosTotal)
+    val costoPintura = calcularCostoPintura(galoresRequeridos, precioPorGalon)
+    val costoManoObra = calcularCostoManoObra(horasTrabajo)
+    val costoTotal = costoManoObra + costoPintura
+
+    imprimirLinea()
+    println("Galones requeridos: ${String.format("%.2f", galoresRequeridos)}")
+    println("Horas de trabajo: ${String.format("%.2f", horasTrabajo)}")
+    println("Costo de la pintura: $${String.format("%.2f", costoPintura)}")
+    println("Costo de la mano de obra: $${String.format("%.2f", costoManoObra)}")
+    println("Costo total: $${String.format("%.2f", costoTotal)}")
 }
