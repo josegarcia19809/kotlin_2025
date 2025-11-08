@@ -67,5 +67,4 @@ fun main() {
     chihuahua.correr()
     chihuahua.jugar()
     chihuahua.ladrar()
-
 }
