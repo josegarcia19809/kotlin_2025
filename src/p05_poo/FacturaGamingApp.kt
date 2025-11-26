@@ -13,6 +13,7 @@ class FacturaGaming(private val plan: Int, private val horasJugadas: Int) {
                     pago += extra * 10
                 }
             }
+
             2 -> {
                 pago = 220.0
                 if (horasJugadas > 25) {
@@ -20,6 +21,7 @@ class FacturaGaming(private val plan: Int, private val horasJugadas: Int) {
                     pago += extra * 8
                 }
             }
+
             3 -> {
                 pago = 300.0
                 if (horasJugadas > 40) {
@@ -33,15 +35,19 @@ class FacturaGaming(private val plan: Int, private val horasJugadas: Int) {
 }
 
 fun main() {
-    val idUsuario = 11
-    val plan = (idUsuario % 3) + 1
-    val horas = idUsuario * 5
+    for (noLista in 1..11) {
+        println("-".repeat(30) + " noLista: $noLista")
+        val idUsuario = noLista
+        val plan = (idUsuario % 3) + 1
+        val horas = idUsuario * 5
 
-    val factura = FacturaGaming(plan, horas)
-    val total = factura.calcularPago()
+        val factura = FacturaGaming(plan, horas)
+        val total = factura.calcularPago()
 
-    println("Usuario $idUsuario")
-    println("Plan asignado: $plan")
-    println("Horas jugadas: $horas")
-    println("Total a pagar: $$total MXN")
+        //println("Usuario $idUsuario")
+        println("Plan asignado: $plan")
+        //println("Horas jugadas: $horas")
+        println("Total a pagar: $$total MXN")
+        println()
+    }
 }
