@@ -21,4 +21,9 @@ fun main() {
             println(filteredList)
             println("Size of list is ${filteredList.size}")
         }
+
+    imprimirLinea()
+    animals.map { it.length }
+        .filter { it > 3 }
+        .let(::println)
 }
