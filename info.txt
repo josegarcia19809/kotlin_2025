@@ -29,4 +29,4 @@ Solution: Common Higher Order Functions
 Section recap
 02:39
 
-Standard Functions: run - ejecutando elementos de un objeto Car
+Standard Functions: run - ejecutando elementos de objetos Restaurant y Laptop
