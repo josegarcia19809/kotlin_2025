@@ -29,4 +29,4 @@ Solution: Common Higher Order Functions
 Section recap
 02:39
 
-Archivos: lectura y escritura
+Standard Functions: let validando valores no nulos en una lista
