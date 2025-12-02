@@ -29,4 +29,4 @@ Solution: Common Higher Order Functions
 Section recap
 02:39
 
-Standard Functions: apply - ejecutando elementos de varios objetos
+Standard Functions: also - ejecutando código de ayuda LOG o DEBUG
