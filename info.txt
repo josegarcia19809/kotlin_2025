@@ -29,4 +29,4 @@ Solution: Common Higher Order Functions
 Section recap
 02:39
 
-Standard Functions: takeIf, takeUnless - ejecutando código de filtrado
+Other classes: Data Class - ejecutando código de filtrado
