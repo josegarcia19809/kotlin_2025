@@ -29,4 +29,4 @@ Solution: Common Higher Order Functions
 Section recap
 02:39
 
-Other classes: Enum Class - Representan un conjunto fijo y limitado de valores
+Other classes: Sealed Class - Permiten crear jerarquías cerradas de subclases
