@@ -29,4 +29,4 @@ Solution: Common Higher Order Functions
 Section recap
 02:39
 
-Other classes: Sealed Class - Permiten crear jerarquías cerradas de subclases
+Other classes: Nested Class - clases definidas dentro de otra clase
