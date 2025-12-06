@@ -29,4 +29,4 @@ Solution: Common Higher Order Functions
 Section recap
 02:39
 
-Other classes: Nested Class - clases definidas dentro de otra clase
+Extensiones en Kotlin: Extension Functions y Extension Properties
